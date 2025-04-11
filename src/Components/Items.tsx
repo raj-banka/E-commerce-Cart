@@ -1,8 +1,12 @@
 import { useContext } from 'react'
-import Cart from './Cart';
 import { CartContext } from '../Context/CartContext';
 
-export default function Items(props ) {
+type prop = {
+    name : string,
+    price : number
+};
+
+export default function Items(props:prop ) {
     const context = useContext(CartContext);
 
     return (
